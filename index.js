@@ -3,11 +3,10 @@ const app = express();
 const port = 8000;  //default website port : 80
 
 //use express router
+//tells the request to route through routes/index.js
 app.use('/', require('./routes/index'));
 
-
-
-
+    
 
 
 app.listen(port, function(err){
