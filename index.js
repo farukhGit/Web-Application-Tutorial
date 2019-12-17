@@ -6,8 +6,8 @@ const port = 8000;  //default website port : 80
 //tells the request to route through routes/index.js
 app.use('/', require('./routes/index'));
 
-app.use('view engine', 'ejs');
-app.set('views', './views')
+app.set('view engine', 'ejs');
+app.set('views', './views');
 
 
 
