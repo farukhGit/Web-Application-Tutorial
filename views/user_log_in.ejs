@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="/css/signin.css">
+<h1>
+    Log In
+</h1>
+
+<form action="/users/create-session" method="POST">
+    <label for="">Username / E-mail</label>
+    <input type="text" id="loginEmail" name="email" required>
+
+    <label for="">Password</label>
+    <input type="password" id="loginPassword" name="password" required>
+
+    <div>
+        <button type="submit">
+            Log In
+        </button>
+        <button type="reset">
+            Reset
+        </button>
+    </div>
+
+</form>
+
+

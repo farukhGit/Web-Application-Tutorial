@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="/css/signup.css">
+<h1>
+    Sign Up
+</h1>
+
+<form action="/users/create" method="POST" id="sign-up-form">
+    <label for="username">
+        Username
+    </label>
+    <input type="text" name="username" id="username" placeholder="Enter a username">
+    
+    <label for="userEmail">
+        E-mail 
+    </label>
+    <input type="email" name="email" placeholder="e.g. xyz@abc.com" id="userEmail">
+    
+    <label for="userPassword">
+        Password
+    </label>
+    <input type="password" name="password" id="userPassword" placeholder="Password">
+
+    <label for="userPassword">
+        Confirm Password
+    </label>
+    <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password">
+
+    <button type="submit">
+        Sign Up
+    </button>
+</form>

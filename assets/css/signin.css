@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    font-size: 3em;
+}
+
+form{
+    padding: 15px;
+    display : flex;
+    flex-direction : column;
+    width : 40%;
+    margin : auto;
+    background-color: brown;
+    font-size: 1.3em;
+}
+
+form input{
+    width : 50%;
+    margin : 15px auto 30px;
+}
+
+form button{
+    width: 20%;
+    margin : 10px 10px;
+    font-size: 1.2em;
+}

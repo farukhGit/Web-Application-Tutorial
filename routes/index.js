@@ -9,6 +9,8 @@ router.use('/users', require('./users'));    //this route tells to handle /user 
 //for any further routes
 //router.use('/routerName', require('./routerFile'))
 
+
 //module.exports.actionName = function(req, res){}
+
 // export to be available to main index.js
 module.exports = router;
