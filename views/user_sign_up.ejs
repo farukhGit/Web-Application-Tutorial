@@ -4,10 +4,10 @@
 </h1>
 
 <form action="/users/create" method="POST" id="sign-up-form">
-    <label for="username">
+    <label for="name">
         Username
     </label>
-    <input type="text" name="username" id="username" placeholder="Enter a username">
+    <input type="text" name="name" id="name" placeholder="Enter a username">
     
     <label for="userEmail">
         E-mail 
@@ -27,4 +27,7 @@
     <button type="submit">
         Sign Up
     </button>
+    <p>
+        Already registered? <a href="/users/sign-in" id="signin-btn">Sign in</a> here.
+    </p>
 </form>

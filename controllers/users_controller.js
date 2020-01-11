@@ -1,9 +1,9 @@
 const User = require('../models/user');
 
 module.exports.profile = (req, res)=>{
-   return res.render('users_profile', {
-       title: "User Profile"
-   });
+    return res.render('users_profile', {
+        title : 'Users Profile'
+    });
 }
 
 //render the sign up page
@@ -20,6 +20,7 @@ module.exports.signin = (req, res)=>{
     });
 }
 
+
 //get the sign up data
 module.exports.create = (req, res)=>{
     //check if password and confirm password match
@@ -35,13 +36,9 @@ module.exports.create = (req, res)=>{
         }
 
         if(!user){//if user does not exist in the database
-                User.create({
-                    name : req.body.username,
-                    password : req.body.password,
-                    email : req.body.email    
-                }, (err, user)=>{
+                User.create(req.body, (err, user)=>{
                     if(err){
-                        console.log('error in creating user while sign up!');
+                        console.log('Error in creating user : ', err);
                         return;
                     }
 
@@ -59,5 +56,14 @@ module.exports.create = (req, res)=>{
 
 //sign in and create a session for the user
 module.exports.createSession = (req, res)=>{
-    return res.redirect('/users/profile');
+    
+    
+    return res.redirect('/');
+}
+
+module.exports.logout = (req, res)=>{
+    
+    res.clearCookie('user_id');
+
+    return res.redirect('/users/sign-in');
 }

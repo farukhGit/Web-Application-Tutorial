@@ -2,3 +2,16 @@ body{
     margin: 0;
     background-color: lightblue;
 }
+
+#logout-div{
+    position : fixed;
+    right : 25px;
+    top : 25px;
+    height: 25px;
+}
+
+#logout-btn{
+    background-color: darkred;
+    color : white;
+    cursor : pointer;
+}
